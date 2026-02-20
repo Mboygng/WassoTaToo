@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <title>★ WASOTATTOO ★ STUDIO</title>
     <style>
         /* ESTÉTICA FRUTIGER AERO / Y2K */
@@ -794,6 +795,36 @@
         }, 150);
     }
 </script>
+<div class="window" style="margin: 20px auto; max-width: 450px; width: 95%;">
+    <div class="title-bar">
+        <div class="title-bar-text">CUERPO_HUMANO_3D.EXE</div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="window-body" style="background: radial-gradient(#333, #000); margin: 0; padding: 0; position: relative;">
+        
+        <model-viewer 
+            src="modelos/Male.glb" 
+            alt="Modelo 3D WasoTattoo" 
+            auto-rotate 
+            camera-controls 
+            shadow-intensity="1" 
+            exposure="1"
+            style="width: 100%; height: 450px; outline: none;">
+            
+            <div slot="poster" style="color: #39ff14; font-family: monospace; text-align: center; padding-top: 200px;">
+                INICIALIZANDO MODELO...
+            </div>
+        </model-viewer>
+
+        <div style="background: #c0c0c0; padding: 4px; border-top: 2px solid #808080; font-size: 0.7rem; font-family: Tahoma; color: #000;">
+            <span>Eje X,Y,Z activo | Render: WebGL</span>
+        </div>
+    </div>
+</div>
 
     <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 4px; margin-top: 40px;">Galería de Trabajos</h3>
     <div class="carrusel-scroll" id="carrusel">
@@ -809,10 +840,36 @@
         <img src="trabajo10.jpg" class="foto-tattoo">
     </div>
 
-    <footer>
-        <p>Visitante número: <span style="font-family: monospace; background: #000; color: #39ff14; padding: 2px 8px;">0000841</span></p>
-        <p>&copy; 2026 WASOTATTOO - Córdoba Capital</p>
+   <footer style="text-align: center; padding: 20px; background: rgba(0,0,0,0.8); border-top: 2px inset #fff;">
+        <p class="rgb-text">&copy; 2026 WASOTATTOO - Córdoba Capital</p>
     </footer>
+    <style>
+    /* Efecto RGB para el texto del Footer */
+    .rgb-text {
+        font-family: 'Tahoma', sans-serif;
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        /* Animación de colores */
+        animation: rgb-animation 5s linear infinite;
+        text-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+
+    @keyframes rgb-animation {
+        0%   { color: #ff0000; text-shadow: 0 0 8px #ff0000; } /* Rojo */
+        20%  { color: #ff00ff; text-shadow: 0 0 8px #ff00ff; } /* Magenta */
+        40%  { color: #0000ff; text-shadow: 0 0 8px #0000ff; } /* Azul */
+        60%  { color: #00ffff; text-shadow: 0 0 8px #00ffff; } /* Cian */
+        80%  { color: #00ff00; text-shadow: 0 0 8px #00ff00; } /* Verde */
+        100% { color: #ff0000; text-shadow: 0 0 8px #ff0000; } /* Vuelve al Rojo */
+    }
+
+    /* Aseguramos que la barra de tareas no tape el brillo */
+    footer {
+        padding-bottom: 50px !important;
+    }
+</style>
 
     <script>
         const slider = document.getElementById('carrusel');
@@ -910,149 +967,180 @@
     actualizarReloj();
 </script>
 <style>
-    .radio-waso {
+    /* BARRA DE TAREAS XP */
+    .taskbar {
         position: fixed;
-        bottom: 50px; /* Por encima de la barra de tareas */
-        right: 20px;
-        width: 260px;
-        background: #c0c0c0; /* Gris clásico Windows */
-        border: 2px solid;
-        border-color: #fff #808080 #808080 #fff;
-        padding: 5px;
-        font-family: 'Tahoma', sans-serif;
-        z-index: 9999;
-        box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
-    }
-
-    .radio-header {
-        background: linear-gradient(to right, #000080, #1084d0);
-        color: white;
-        padding: 3px 8px;
-        font-size: 0.75rem;
-        font-weight: bold;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #1941a5 100%);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 5px;
+        z-index: 10001;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+        font-family: 'Tahoma', sans-serif;
     }
-
-    .radio-display {
-        background: #000;
-        color: #39ff14; /* Verde matriz */
-        padding: 10px;
-        border: 2px inset #fff;
-        text-align: center;
-        font-family: 'VT323', monospace;
-        margin-bottom: 5px;
-        height: 45px;
+    .start-btn {
+        background: linear-gradient(to bottom, #388e3c, #1b5e20);
+        color: white;
+        padding: 0 15px;
+        height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        overflow: hidden;
+        align-items: center;
+        font-weight: bold;
+        font-style: italic;
+        border-right: 1px solid #143606;
+        cursor: pointer;
+    }
+    .system-tray {
+        background: #0972da;
+        color: white;
+        padding: 0 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        border-left: 1px solid #1159a6;
     }
 
-    .radio-controls {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2px;
-    }
-
-    .btn-radio {
+    /* REPRODUCTOR RADIO COMPACTO (No tapa las fotos) */
+    .radio-waso {
+        position: fixed;
+        bottom: 35px; 
+        right: 10px;
+        width: 210px; /* Más angosto */
         background: #c0c0c0;
         border: 2px solid;
         border-color: #fff #808080 #808080 #fff;
-        font-size: 0.7rem;
-        cursor: pointer;
-        padding: 5px;
-        font-weight: bold;
-        text-align: center;
+        padding: 4px;
+        font-family: 'Tahoma', sans-serif;
+        z-index: 9999;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     }
-
-    .btn-radio:active {
-        border-color: #808080 #fff #fff #808080;
-        padding: 6px 4px 4px 6px;
-    }
-
-    .radio-status {
+    .radio-header {
+        background: linear-gradient(to right, #000080, #1084d0);
+        color: white;
+        padding: 2px 5px;
         font-size: 0.6rem;
-        color: #808080;
-        margin-top: 5px;
-        text-align: center;
-        text-transform: uppercase;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
     }
-
-    /* Animación de texto de radio */
+    .radio-display {
+        background: #000;
+        color: #39ff14;
+        padding: 5px;
+        border: 2px inset #fff;
+        margin: 4px 0;
+        height: 35px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
     .track-name {
+        font-family: 'VT323', monospace;
+        font-size: 0.8rem;
         white-space: nowrap;
         animation: marquee-radio 10s linear infinite;
     }
-
     @keyframes marquee-radio {
         0% { transform: translateX(100%); }
         100% { transform: translateX(-100%); }
     }
+    .radio-controls { display: flex; gap: 2px; }
+    .btn-radio {
+        flex: 1;
+        background: #c0c0c0;
+        border: 2px solid;
+        border-color: #fff #808080 #808080 #fff;
+        font-size: 0.6rem;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 3px;
+    }
+    .btn-radio:active { border-color: #808080 #fff #fff #808080; }
+
+    footer { padding-bottom: 50px !important; }
 </style>
 
 <div class="radio-waso">
     <div class="radio-header">
-        <span>📻 WASO_RADIO.EXE</span>
-        <span>[X]</span>
+        <span>📻 RADIO WASO</span>
+        <span onclick="document.querySelector('.radio-waso').style.display='none'" style="cursor:pointer">[X]</span>
     </div>
-    
     <div class="radio-display">
-        <div id="radio-info" class="track-name">RADIO OFFLINE - PRESIONÁ PLAY</div>
-        <div id="radio-time" style="font-size: 0.8rem; color: #00ff00;">00:00</div>
+        <div id="radio-info" class="track-name">DALE PLAY AL CUARTETO...</div>
+        <div id="radio-time" style="font-size: 0.7rem; color: #00ff00; font-family: monospace;">00:00</div>
     </div>
-
     <div class="radio-controls">
         <button class="btn-radio" onclick="playRadio()">PLAY</button>
         <button class="btn-radio" onclick="pauseRadio()">PAUSE</button>
         <button class="btn-radio" onclick="nextTrack()">NEXT</button>
-        <button class="btn-radio" onclick="stopRadio()">STOP</button>
     </div>
+</div>
 
-    <div class="radio-status">Sintonizando: 100.3 MHz - La Docta</div>
+<div class="taskbar">
+    <div class="start-btn">Inicio</div>
+    <div style="color: white; font-size: 0.7rem; margin-left: 10px; flex-grow: 1;">WASOTATTOO_RADIO_v2.exe</div>
+    <div class="system-tray" id="reloj-xp">00:00</div>
 </div>
 
 <audio id="wasoAudio" onended="nextTrack()"></audio>
 
 <script>
+    // RELOJ DE LA BARRA
+    function actualizarReloj() {
+        const ahora = new Date();
+        const h = ahora.getHours().toString().padStart(2, '0');
+        const m = ahora.getMinutes().toString().padStart(2, '0');
+        document.getElementById('reloj-xp').innerText = h + ":" + m;
+    }
+    setInterval(actualizarReloj, 1000);
+    actualizarReloj();
+
+    // RADIO Y PLAYLIST
     const audio = document.getElementById('wasoAudio');
     const info = document.getElementById('radio-info');
     const timeDisplay = document.getElementById('radio-time');
+    
+    // VOLUMEN BAJITO (15%)
+    audio.volume = 0.15;
 
-    // --- CONFIGURACIÓN DE TUS CANCIONES ---
-    // Cambiá estos nombres por los archivos que tenés en tu carpeta
     const playlist = [
-        { nombre: "La Mona Jimenez - El Federal", archivo: "musica/mona_federal.mp3" },
-        { nombre: "Rodrigo - Soy Cordobés", archivo: "musica/rodrigo_cordobes.mp3" },
-        { nombre: "Cuarteto Mix - Waso Tattoo", archivo: "musica/mix_waso.mp3" }
+        { nombre: "La Mona - Como quema", archivo: "musica/La Mona Jimenez-Como quema.mp3" },
+        { nombre: "La Mona - La Novia Blanca", archivo: "musica/La Mona Jimenez-La Novia Blanca.mp3" },
+        { nombre: "La Mona - Muchacho de Barrio", archivo: "musica/La Mona Jimenez-Muchacho de Barrio.mp3" },
+        { nombre: "La Mona - Se fue", archivo: "musica/La Mona Jimenez-Se fue.mp3" },
+        { nombre: "Ulises - A puerta cerrada", archivo: "musica/ulises-A puerta cerrada.mp3" },
+        { nombre: "Ulises - Ahora Mírame", archivo: "musica/ulises-Ahora Mírame.mp3" },
+        { nombre: "Ulises - Aún estas en mis sueños", archivo: "musica/ulises-Aún estas en mis sueños.mp3" },
+        { nombre: "Ulises - Cadena Perpetua", archivo: "musica/ulises-Cadena Perpetua.mp3" },
+        { nombre: "Ulises - Como estas", archivo: "musica/ulises-Como estas.mp3" },
+        { nombre: "Ulises - Como le digo yo", archivo: "musica/ulises-Como le digo yo.mp3" },
+        { nombre: "Ulises - Como Le Explico", archivo: "musica/ulises-Como Le Explico.mp3" },
+        { nombre: "Ulises - Cordobés y cuartetero", archivo: "musica/ulises-Cordobés y cuartetero.mp3" },
+        { nombre: "Ulises - Cuanto te debo", archivo: "musica/ulises-Cuanto te debo.mp3" },
+        { nombre: "Ulises - Ese maldito momento", archivo: "musica/ulises-Ese maldito momento.mp3" },
+        { nombre: "Ulises - Fondo Blanco", archivo: "musica/ulises-Fondo Blanco.mp3" }
     ];
 
     let currentTrack = 0;
 
     function loadTrack(index) {
         audio.src = playlist[index].archivo;
-        info.innerText = "REPRODUCIENDO: " + playlist[index].nombre;
+        info.innerText = "SONANDO: " + playlist[index].nombre;
     }
 
     function playRadio() {
         if (!audio.src) loadTrack(currentTrack);
-        audio.play().catch(e => {
-            info.innerText = "ERROR: ARCHIVO NO ENCONTRADO";
-        });
+        audio.play().catch(() => info.innerText = "HACE CLIC PARA ACTIVAR");
     }
 
-    function pauseRadio() {
-        audio.pause();
-        info.innerText = "RADIO EN PAUSA";
-    }
-
-    function stopRadio() {
-        audio.pause();
-        audio.currentTime = 0;
-        info.innerText = "RADIO DETENIDA";
-    }
+    function pauseRadio() { audio.pause(); info.innerText = "RADIO EN PAUSA"; }
 
     function nextTrack() {
         currentTrack = (currentTrack + 1) % playlist.length;
@@ -1060,7 +1148,6 @@
         audio.play();
     }
 
-    // Actualizar el tiempo del reproductor
     audio.ontimeupdate = function() {
         let mins = Math.floor(audio.currentTime / 60);
         let secs = Math.floor(audio.currentTime % 60);

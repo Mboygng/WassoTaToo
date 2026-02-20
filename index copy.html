@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>★ WASOTATTOO ★ STUDIO</title>
+    <style>
+        /* ESTÉTICA FRUTIGER AERO / Y2K */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #004e92 url('https://www.transparenttextures.com/patterns/bubbles.png');
+            background: linear-gradient(135deg, #004e92 0%, #00c6ff 100%);
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-bottom: 3px solid rgba(255,255,255,0.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            text-shadow: 3px 3px 0px #004e92, 5px 5px 15px rgba(255,255,255,0.8);
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            overflow-wrap: break-word;
+        }
+
+        marquee {
+            background: #ffff00;
+            color: #000;
+            font-weight: bold;
+            padding: 8px;
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+        }
+
+        /* CUADRO DE AVISO IMPORTANTE ESTILO WINDOWS */
+        .aviso-importante {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #f1f1f1;
+            border: 3px solid #0055ea;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 8px 8px 0px rgba(0,0,0,0.2);
+            color: #000;
+            overflow: hidden;
+        }
+
+        .aviso-header {
+            background: linear-gradient(to right, #0055ea, #00c6ff);
+            color: white;
+            padding: 5px 15px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .aviso-body {
+            padding: 15px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            background: #fff;
+        }
+
+        /* GRILLA DE PROMOS */
+        .promo-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .promo-card {
+            flex: 1;
+            min-width: 270px;
+            max-width: 300px;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.2) 100%);
+            border: 2px solid #fff;
+            border-radius: 20px;
+            padding: 20px;
+            color: #000;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            backdrop-filter: blur(5px);
+            text-align: center;
+        }
+
+        .promo-card h2 {
+            font-size: 1.1rem;
+            background: #00c6ff;
+            color: white;
+            padding: 8px;
+            border-radius: 10px;
+            margin-top: 0;
+            text-shadow: 1px 1px 2px #000;
+            box-shadow: inset 0 0 8px white;
+        }
+
+        .precio-main { font-size: 1.6rem; font-weight: 900; color: #003366; }
+        
+        .detalles-lista {
+            font-size: 0.8rem;
+            text-align: left;
+            margin: 15px 0;
+            list-style: '✔ ';
+        }
+
+        /* BOTÓN GLOSSY */
+        .btn-wa {
+            display: block;
+            background: linear-gradient(to bottom, #44eb12 0%, #1a9e05 100%);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 50px;
+            border: 2px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .btn-wa:hover { filter: brightness(1.2); transform: scale(1.05); }
+
+        /* CARRUSEL */
+        .carrusel-scroll {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 20px 40px;
+            scrollbar-width: none;
+        }
+
+        .foto-tattoo {
+            height: 380px;
+            border: 6px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+            flex-shrink: 0;
+        }
+
+        footer {
+            text-align: center;
+            background: rgba(0,0,0,0.8);
+            padding: 25px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>★ WASOTATTOO ★</h1>
+        <p>STUDIO PROFESIONAL - CÓRDOBA CAPITAL</p>
+    </header>
+
+    <marquee scrollamount="12">✦ BIENVENIDO A WASOTATTOO ✦ CALIDAD Y PROFESIONALISMO 100% CORDOBÉS ✦ REVISÁ LA VENTANA DE CUIDADOS ANTES DE SALIR ✦ MATERIAL 100% DESCARTABLE ✦ TRAÉ TU DISEÑO Y LO HACEMOS REALIDAD ✦ SI SOS DE LA DOCTA, TATUATE CON LOS QUE SABEN ✦ EVITÁ EL SUDOR Y EL SOL LOS PRIMEROS DÍAS ✦ CUIDÁ TU TATUAJE COMO SI FUERA ORO ✦ EL DOLOR PASA, EL ARTE QUEDA ✦ WASOTATTOO STUDIO 2026 ✦</marquee>
+
+    <div class="aviso-importante">
+        <div class="aviso-header">
+            <span>¡IMPORTANTE! - Sistema de Info</span>
+            <span>[X]</span>
+        </div>
+        <div class="aviso-body">
+            <strong>Las fotos que aparecen en las promociones son EJEMPLOS</strong> de trabajos ya realizados (estilo, tamaño y técnica). 
+            No son catálogos cerrados: <strong>podes traer tu propio diseño</strong> siempre que cumpla con las condiciones de la promo.
+        </div>
+    </div>
+    
+    <style>
+    .ventana-windows {
+        max-width: 800px;
+        margin: 20px auto;
+        background: #f1f1f1;
+        border: 2px solid #0055ea;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 8px 8px 0px rgba(0,0,0,0.1);
+        color: #000;
+        font-family: 'Tahoma', 'Segoe UI', sans-serif;
+    }
+    .ventana-header {
+        background: linear-gradient(to right, #0055ea, #00c6ff);
+        color: white;
+        padding: 6px 12px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85rem;
+        align-items: center;
+    }
+    .ventana-body {
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #777;
+        margin: 2px;
+    }
+    .cuidados-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+    }
+    .item-cuidado {
+        margin-bottom: 12px;
+        padding-left: 30px;
+        position: relative;
+        font-size: 0.9rem;
+    }
+    .item-cuidado::before {
+        content: '⚙️';
+        position: absolute;
+        left: 0;
+        top: 2px;
+    }
+    .alerta-roja {
+        background: #fff0f0;
+        border: 1px dashed #cc0000;
+        padding: 10px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    .btn-win-ok {
+        display: block;
+        width: 100px;
+        margin: 15px auto 0;
+        padding: 5px;
+        text-align: center;
+        background: #eee;
+        border: 2px solid;
+        border-color: #fff #808080 #808080 #fff;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+        color: #000;
+    }
+    .btn-win-ok:active {
+        border-color: #808080 #fff #fff #808080;
+    }
+</style>
+
+<div class="ventana-windows">
+    <div class="ventana-header">
+        <span>ASISTENTE DE CURACIÓN - WASOTATTOO V2.0</span>
+        <span>[_][X]</span>
+    </div>
+    <div class="ventana-body">
+        <h3 style="margin: 0 0 15px 0; color: #0055ea; font-size: 1.2rem;">🛠️ Instrucciones Post-Tattoo</h3>
+        
+        <div class="cuidados-grid">
+            <div>
+                <div class="item-cuidado"><strong>Higiene Base:</strong> Lavar 3 veces al día con jabón neutro blanco y agua tibia. Secar con servilleta de papel (no toalla) a toquecitos.</div>
+                <div class="item-cuidado"><strong>Hidratación:</strong> Poner una capa muy fina de crema humectante (Dermaglós o similar). Si brilla mucho, pusiste de más.</div>
+                <div class="item-cuidado"><strong>Nada de Sol ni Agua:</strong> Prohibido sol, piletas, ríos o mar por 20 días. El cloro y la sal arruinan el color.</div>
+            </div>
+            
+            <div class="alerta-roja">
+                <strong style="color: #cc0000;">⚠️ ADVERTENCIAS DE AMBIENTE:</strong>
+                <ul style="margin: 5px 0; padding-left: 15px; font-size: 0.85rem;">
+                    <li><strong>SUDOR Y TRANSPIRACIÓN:</strong> Evitá el gimnasio o actividad física pesada los primeros 5 días. El sudor contiene bacterias y puede infectar el diseño.</li>
+                    <li><strong>POLVO Y SUCIEDAD:</strong> Si trabajás en ambientes con mucho polvo, tierra o pelusa, mantené el tatuaje cubierto con ropa de algodón limpia.</li>
+                    <li><strong>AGENTES QUÍMICOS:</strong> Nada de perfumes, talcos, desodorantes o polvos sobre la zona herida.</li>
+                </ul>
+            </div>
+        </div>
+
+        <p style="font-size: 0.8rem; margin-top: 15px; text-align: center; color: #666;">
+            * El tatuaje es una herida abierta. Tratala con respeto y va a quedar flama.
+        </p>
+        
+        <a href="#" class="btn-win-ok">ACEPTAR</a>
+    </div>
+</div>
+
+
+    <div class="promo-wrapper">
+        <div class="promo-card">
+            <h2>🔥 PROMO 2x1 (8cm) 🔥</h2>
+            <div class="precio-main">1 PERS: $20.000</div>
+            <div style="font-weight: bold;">2 PERS: $30.000</div>
+            <ul class="detalles-lista">
+                <li>Hasta 8cm cada uno</li>
+                <li>Modelos simples y lineales</li>
+                <li>Solo tinta negra</li>
+                <li>Zona: Brazos y Piernas</li>
+            </ul>
+            <p style="color:red; font-size: 0.7rem; font-weight: bold;">* Cambio zona: $4.000 c/u</p>
+            <a href="https://api.whatsapp.com/send?phone=5493513172058&text=Hola%20Waso!%20Quiero%20reservar%20la%20🔥%20PROMO%202x1%20(8cm)%20🔥" class="btn-wa">RESERVAR TURNO</a>
+        </div>
+
+        <div class="promo-card">
+    <h2>⚡ PROMO 3x1 (5cm) ⚡</h2>
+    <div class="precio-main">$14.000</div>
+    <p style="color:red; font-size: 0.7rem; font-weight: bold;">⚠️ INDIVIDUAL</p>
+    <ul class="detalles-lista">
+        <li>Hasta 5cm cada uno</li>
+        <li>Diseños lineales simples</li>
+        <li>Tinta negra</li>
+        <li>Zona: Brazos y Piernas</li>
+    </ul>
+    <p style="color:red; font-size: 0.7rem; font-weight: bold;">* Cambio zona: $4.000 c/u</p>
+    
+    <a href="https://api.whatsapp.com/send?phone=5493513172058&text=Hola%20Waso!%20Quiero%20reservar%20la%20⚡%20PROMO%203x1%20(5cm)%20⚡%20por%20$14.000" class="btn-wa">RESERVAR TURNO</a>
+</div>
+
+   <div class="promo-card">
+    <h2>✨ PROMO 2x1 (5cm) ✨</h2>
+    <div class="precio-main">1 PERS: $12.000</div>
+    <div style="font-weight: bold;">2 PERS: $20.000</div>
+    <ul class="detalles-lista">
+        <li>Hasta 5cm cada uno</li>
+        <li>Modelos simples</li>
+        <li>Solo Negro</li>
+        <li>Zona: Brazos y Piernas</li>
+    </ul>
+    <a href="https://api.whatsapp.com/send?phone=5493513172058&text=Hola%20Waso!%20Quiero%20reservar%20la%20✨%20PROMO%202x1%20(5cm)%20✨" class="btn-wa">RESERVAR TURNO</a>
+</div>
+
+<div class="promo-card">
+    <h2>🚀 SUPER 7x1 🚀</h2>
+    <div class="precio-main">$30.000</div>
+    <p style="color:red; font-size: 0.7rem; font-weight: bold;">⚠️ MISMA PERSONA</p>
+    <ul class="detalles-lista">
+        <li>Ideal para completar brazos</li>
+        <li>Modelos lineales</li>
+        <li>Tinta negra</li>
+        <li>Zona: Brazos y Piernas</li>
+    </ul>
+    <a href="https://api.whatsapp.com/send?phone=5493513172058&text=Hola%20Waso!%20Me%20quiero%20hacer%20la%20🚀%20SUPER%207x1%20🚀%20de%20$30.000" class="btn-wa">RESERVAR TURNO</a>
+</div>
+
+ <div style="max-width: 900px; margin: 20px auto; background: rgba(0,0,0,0.6); border: 3px double #00c6ff; border-radius: 25px; padding: 25px; text-align: center; color: #fff;">
+    <h2 style="color: #ffff00;">💉 CUARTO DE MANGA 💉</h2>
+    <p style="font-size: 2rem; font-weight: bold; margin: 5px 0;">Desde $180.000</p>
+    <p style="font-size: 0.8rem;">Hombro a Codo: $150.000 | Codo a Muñeca: $130.000</p>
+    
+    <a href="https://api.whatsapp.com/send?phone=5493513172058&text=Hola%20Waso!%20Quiero%20consultar%20por%20un%20💉%20CUARTO%20DE%20MANGA%20💉.%20¿Me%20asesoras%20con%20el%20diseño?" 
+       class="btn-wa" 
+       style="display: inline-block; padding: 12px 40px; background: #fff; color: #000; text-decoration: none; border-radius: 50px; font-weight: bold;">
+       CONSULTAR DISEÑO
+    </a>
+</div>
+    <style>
+    .seccion-dolor {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #ece9d8; /* Color clásico de ventana Windows XP */
+        border: 2px solid #0055ea;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+        font-family: 'Tahoma', sans-serif;
+        color: #000;
+        overflow: hidden;
+    }
+
+    .dolor-header {
+        background: linear-gradient(to right, #0055ea, #086dff, #0055ea);
+        color: white;
+        padding: 8px 12px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-shadow: 1px 1px 1px #000;
+    }
+
+    .dolor-body {
+        padding: 20px;
+        background: #f4f4f4;
+    }
+
+    .zona-dolor {
+        margin-bottom: 20px;
+    }
+
+    .zona-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    /* Barra de progreso estilo XP */
+    .progress-bg {
+        background: #fff;
+        border: 1px solid #7c7c7c;
+        height: 25px;
+        padding: 2px;
+        box-shadow: inset 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .progress-bar {
+        height: 100%;
+        background: linear-gradient(to bottom, #b2e0af 0%, #68c368 50%, #40a840 51%, #b2e0af 100%);
+        background-size: 30px 100%;
+        transition: width 1s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 5px;
+        color: white;
+        font-size: 0.7rem;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    }
+
+    /* Colores por nivel de dolor */
+    .bajo { background: linear-gradient(to bottom, #b2e0af, #40a840); }
+    .medio { background: linear-gradient(to bottom, #ffe0a3, #ffb300); }
+    .alto { background: linear-gradient(to bottom, #ffb3b3, #cc0000); }
+
+    .descripcion-cordobesa {
+        font-size: 0.8rem;
+        font-style: italic;
+        color: #555;
+        margin-top: 4px;
+        display: block;
+    }
+</style>
+
+<div class="seccion-dolor">
+    <div class="dolor-header">
+        <span><img src="https://win98icons.alexmeub.com/icons/png/msagent-0.png" width="16" style="vertical-align: middle; margin-right: 5px;"> ANALIZADOR_DE_RESISTENCIA.EXE</span>
+        <span>[_][X]</span>
+    </div>
+    <div class="dolor-body">
+        <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">
+            ¿Cuánto te va a doler según la zona? Consultá nuestro "Dolor-Metro":
+        </p>
+
+        <div class="zona-dolor">
+            <div class="zona-info">
+                <span>ANTEBRAZO / MUSLO</span>
+                <span>NIVEL: TRANQUI</span>
+            </div>
+            <div class="progress-bg">
+                <div class="progress-bar bajo" style="width: 30%;">30%</div>
+            </div>
+            <span class="descripcion-cordobesa">Ideal para tu primer tatuaje. Ni se siente, es como un rasponcito de gato.</span>
+        </div>
+
+        <div class="zona-dolor">
+            <div class="zona-info">
+                <span>HOMBROS / PANTORRILLAS</span>
+                <span>NIVEL: SE BANCA</span>
+            </div>
+            <div class="progress-bg">
+                <div class="progress-bar bajo" style="width: 50%;">50%</div>
+            </div>
+            <span class="descripcion-cordobesa">Se aguanta perfecto charlando o escuchando un buen cuarteto de fondo.</span>
+        </div>
+
+        <div class="zona-dolor">
+            <div class="zona-info">
+                <span>PECHO / CUELLO / ESPALDA ALTA</span>
+                <span>NIVEL: PICANTE</span>
+            </div>
+            <div class="progress-bg">
+                <div class="progress-bar medio" style="width: 75%;">75%</div>
+            </div>
+            <span class="descripcion-cordobesa">Acá ya empezás a pedirle un poco de aliento al tatuador. ¡Respire profundo, jefe!</span>
+        </div>
+
+        <div class="zona-dolor">
+            <div class="zona-info">
+                <span>CODO / COSTILLAS / RODILLA</span>
+                <span>NIVEL: VALIENTE</span>
+            </div>
+            <div class="progress-bg">
+                <div class="progress-bar alto" style="width: 95%;">95%</div>
+            </div>
+            <span class="descripcion-cordobesa">Solo para los más guapos de la Docta. Vas a ver las estrellas, pero el resultado es épico.</span>
+        </div>
+
+        <p style="font-size: 0.75rem; text-align: center; margin-top: 20px; color: #444; border-top: 1px solid #ccc; padding-top: 10px;">
+            * Los niveles pueden variar según la persona. ¡No seas flojo y vení igual!
+        </p>
+    </div>
+</div>
+<style>
+    .seccion-kit {
+        width: 95%; /* Ajuste para que entre en Android */
+        max-width: 850px;
+        margin: 20px auto;
+        background: #1a1a1a;
+        border: 4px ridge #c0c0c0;
+        padding: 15px; /* Bajé un poco el padding para ganar espacio */
+        color: #fff;
+        font-family: 'Tahoma', sans-serif;
+        box-shadow: 0 0 20px rgba(0, 198, 255, 0.5);
+        box-sizing: border-box; /* Fundamental para que no se pase del ancho */
+    }
+
+    .kit-header {
+        text-align: center;
+        border-bottom: 2px solid #00c6ff;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .kit-header h2 {
+        margin: 0;
+        font-size: 1.2rem; /* Un poco más chico para que no haga scroll */
+        color: #00c6ff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px #000;
+    }
+
+    .inventario-container {
+        display: grid;
+        /* Si la pantalla es chica, pone uno abajo del otro. Si es grande, dos columnas */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        gap: 15px;
+    }
+
+    .columna-inventario {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid #444;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .columna-inventario h3 {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 0;
+        padding: 5px;
+        background: #333;
+        border-radius: 5px;
+    }
+
+    .grid-items {
+        display: grid;
+        /* Cambiado a auto-fill para que los slots no se deformen en Android */
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 8px;
+        margin-top: 15px;
+        justify-items: center;
+    }
+
+    .item-slot {
+        width: 60px; /* Un toque más chicos para asegurar que entren de a 3 en celus angostos */
+        height: 60px;
+        background: #000;
+        border: 2px inset #666;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .item-slot:hover {
+        border-color: #00c6ff;
+        background: #111;
+    }
+
+    /* Ajuste para que el tooltip no se salga de la pantalla en móviles */
+    .item-slot:hover::after {
+        content: attr(data-info);
+        position: absolute;
+        bottom: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #000;
+        border: 1px solid #00c6ff;
+        color: #fff;
+        padding: 6px;
+        font-size: 0.65rem;
+        width: 100px;
+        z-index: 10;
+        text-align: center;
+        pointer-events: none; /* Para que no moleste al tocar en Android */
+    }
+
+    .leyenda-kit {
+        margin-top: 15px;
+        font-size: 0.7rem;
+        text-align: center;
+        color: #aaa;
+    }
+</style>
+
+<div class="seccion-kit">
+    <div class="kit-header">
+        <h2>🎒 EQUIPAMIENTO DEL TATUADO 🎒</h2>
+        <p style="font-size: 0.7rem; margin: 5px 0;">Prepará tu inventario antes de venir</p>
+    </div>
+
+    <div class="inventario-container">
+        <div class="columna-inventario">
+            <h3 style="color: #44eb12;">✅ ITEMS RECOMENDADOS</h3>
+            <div class="grid-items">
+                <div class="item-slot" data-info="ROPA CÓMODA">👕</div>
+                <div class="item-slot" data-info="HIDRATACIÓN">💧</div>
+                <div class="item-slot" data-info="DULCES">🍬</div>
+                <div class="item-slot" data-info="BUENA ONDA">😎</div>
+                <div class="item-slot" data-info="DISEÑO">📱</div>
+                <div class="item-slot" data-info="CARGADOR">🔌</div>
+            </div>
+        </div>
+
+        <div class="columna-inventario">
+            <h3 style="color: #ff4444;">❌ ITEMS PROHIBIDOS</h3>
+            <div class="grid-items">
+                <div class="item-slot" data-info="AMIGOS">👥</div>
+                <div class="item-slot" data-info="MASCOTAS">🐶</div>
+                <div class="item-slot" data-info="PERFUME">🚫</div>
+                <div class="item-slot" data-info="APURO">⏳</div>
+                <div class="item-slot" data-info="ALCOHOL">🍺</div>
+                <div class="item-slot" data-info="NIÑOS">👶</div>
+            </div>
+        </div>
+    </div>
+</div>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Pacifico&family=Rochester&family=UnifrakturMaguntia&family=Pirata+One&family=Homemade+Apple&family=Special+Elite&family=Permanent+Marker&family=Metal+Mania&family=VT323&family=Parisienne&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<style>
+    .panel-frases {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #ece9d8;
+        border: 2px solid #0055ea;
+        padding: 15px;
+        font-family: 'Tahoma', sans-serif;
+        box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
+    }
+    .input-frase {
+        width: 100%;
+        padding: 15px;
+        border: 2px inset #7c7c7c;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        color: #000;
+        font-weight: bold;
+    }
+    .grid-fuentes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    @media (max-width: 500px) { .grid-fuentes { grid-template-columns: 1fr; } }
+
+    .resultado-fuente {
+        background: #ffffff;
+        border: 1px solid #7c7c7c;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 150px;
+    }
+    
+    .texto-display {
+        color: #000000 !important;
+        margin: auto;
+        word-wrap: break-word;
+    }
+
+    /* Estilos de las 8 fuentes */
+    .f-1 { font-family: 'Great Vibes', cursive; font-size: 2.2rem; }
+    .f-2 { font-family: 'UnifrakturMaguntia', cursive; font-size: 2rem; } /* Gótica */
+    .f-3 { font-family: 'Pacifico', cursive; font-size: 1.5rem; }
+    .f-4 { font-family: 'Pirata One', system-ui; font-size: 2rem; } /* Cholo/Old English */
+    .f-5 { font-family: 'Homemade Apple', cursive; font-size: 1.2rem; } /* Firma fina */
+    .f-6 { font-family: 'Rochester', cursive; font-size: 1.8rem; }
+    .f-7 { font-family: 'Special Elite', cursive; font-size: 1.5rem; } /* Máquina de escribir */
+    .f-8 { font-family: 'Dancing Script', cursive; font-size: 1.8rem; }
+    .f-9 { font-family: 'Permanent Marker', cursive; font-size: 1.8rem; } /* Estilo Pincel/Graffiti */
+    .f-10 { font-family: 'Metal Mania', cursive; font-size: 1.8rem; } /* Estilo Heavy Metal/Terror */
+    .f-11 { font-family: 'VT323', monospace; font-size: 2.2rem; } /* Estilo Digital/Pixel */
+    .f-12 { font-family: 'Parisienne', cursive; font-size: 2rem; } /* Cursiva muy fina/Fem */
+
+    .btn-descargar {
+        background: #f0f0f0;
+        border: 1px solid #7c7c7c;
+        color: #000;
+        font-size: 0.6rem;
+        padding: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .btn-descargar:hover { background: #0055ea; color: white; }
+    
+    .label-fuente { font-size: 0.55rem; color: #666; font-weight: bold; margin-bottom: 5px; text-transform: uppercase; }
+</style>
+
+<div class="panel-frases">
+    <div style="background: #000080; color: white; padding: 5px; margin: -15px -15px 15px -15px; font-weight: bold; font-size: 0.8rem;">
+        📝 CATALOGO_DE_FUENTES_V4.EXE
+    </div>
+    
+    <p style="font-size: 0.75rem; font-weight: bold; margin-bottom: 5px;">ESCRIBÍ TU FRASE O NOMBRE:</p>
+    <input type="text" id="textoInput" class="input-frase" placeholder="Ej: Waso Tattoo" oninput="actualizarFrases()" style="width: 100%; box-sizing: border-box; padding: 10px; margin-bottom: 15px;">
+    
+    <div class="grid-fuentes" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+        <div class="resultado-fuente" id="c1">
+            <span class="label-fuente">Elegante Fine</span>
+            <div class="texto-display f-1 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c1', 'elegante')">DESCARGAR</button>
+        </div>
+        <div class="resultado-fuente" id="c2">
+            <span class="label-fuente">Gótica / Dark</span>
+            <div class="texto-display f-2 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c2', 'gotica')">DESCARGAR</button>
+        </div>
+        <div class="resultado-fuente" id="c3">
+            <span class="label-fuente">Retro Urbana</span>
+            <div class="texto-display f-3 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c3', 'retro')">DESCARGAR</button>
+        </div>
+        <div class="resultado-fuente" id="c4">
+            <span class="label-fuente">Cholo Style</span>
+            <div class="texto-display f-4 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c4', 'cholo')">DESCARGAR</button>
+        </div>
+        <div class="resultado-fuente" id="c5">
+            <span class="label-fuente">Minimalista / Firma</span>
+            <div class="texto-display f-5 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c5', 'firma')">DESCARGAR</button>
+        </div>
+        <div class="resultado-fuente" id="c6">
+            <span class="label-fuente">Vintage Luxury</span>
+            <div class="texto-display f-6 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c6', 'vintage')">DESCARGAR</button>
+        </div>
+        <div class="resultado-fuente" id="c7">
+            <span class="label-fuente">Typewriter / Old School</span>
+            <div class="texto-display f-7 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c7', 'maquina')">DESCARGAR</button>
+        </div>
+        <div class="resultado-fuente" id="c8">
+            <span class="label-fuente">Script Moderna</span>
+            <div class="texto-display f-8 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c8', 'moderna')">DESCARGAR</button>
+        </div>
+
+        <div class="resultado-fuente" id="c9">
+            <span class="label-fuente">Brush / Pincel</span>
+            <div class="texto-display f-9 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c9', 'pincel')">DESCARGAR</button>
+        </div>
+        <div class="resultado-fuente" id="c10">
+            <span class="label-fuente">Metal / Terror</span>
+            <div class="texto-display f-10 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c10', 'terror')">DESCARGAR</button>
+        </div>
+        <div class="resultado-fuente" id="c11">
+            <span class="label-fuente">Digital / Pixel</span>
+            <div class="texto-display f-11 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c11', 'digital')">DESCARGAR</button>
+        </div>
+        <div class="resultado-fuente" id="c12">
+            <span class="label-fuente">Parisienne / Soft</span>
+            <div class="texto-display f-12 res-txt">Waso Tattoo</div>
+            <button class="btn-descargar" onclick="descargar('c12', 'soft')">DESCARGAR</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function actualizarFrases() {
+        const t = document.getElementById('textoInput').value || "Waso Tattoo";
+        const resultados = document.querySelectorAll('.res-txt');
+        resultados.forEach(el => el.innerText = t);
+    }
+
+    function descargar(idElemento, nombre) {
+        const elemento = document.getElementById(idElemento);
+        const boton = elemento.querySelector('.btn-descargar');
+        boton.style.display = 'none';
+
+        setTimeout(() => {
+            html2canvas(elemento, { backgroundColor: "#ffffff", scale: 2 }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'Waso-Stencil-' + nombre + '.png';
+                link.href = canvas.toDataURL("image/png");
+                link.click();
+                boton.style.display = 'inline-block';
+            });
+        }, 150);
+    }
+</script>
+
+    <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 4px; margin-top: 40px;">Galería de Trabajos</h3>
+    <div class="carrusel-scroll" id="carrusel">
+        <img src="trabajo1.jpg" class="foto-tattoo">
+        <img src="trabajo2.jpg" class="foto-tattoo">
+        <img src="trabajo3.jpg" class="foto-tattoo">
+        <img src="trabajo4.jpg" class="foto-tattoo">
+        <img src="trabajo5.jpg" class="foto-tattoo">
+        <img src="trabajo6.jpg" class="foto-tattoo">
+        <img src="trabajo7.jpg" class="foto-tattoo">
+        <img src="trabajo8.jpg" class="foto-tattoo">
+        <img src="trabajo9.jpg" class="foto-tattoo">
+        <img src="trabajo10.jpg" class="foto-tattoo">
+    </div>
+
+    <footer>
+        <p>Visitante número: <span style="font-family: monospace; background: #000; color: #39ff14; padding: 2px 8px;">0000841</span></p>
+        <p>&copy; 2026 WASOTATTOO - Córdoba Capital</p>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('carrusel');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => isDown = false);
+        slider.addEventListener('mouseup', () => isDown = false);
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2; 
+            slider.scrollLeft = scrollLeft - walk;
+        });
+    </script>
+    <style>
+    .taskbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #1941a5 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10001;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+        font-family: 'Tahoma', sans-serif;
+    }
+    .start-btn {
+        background: linear-gradient(to bottom, #388e3c, #1b5e20);
+        color: white;
+        padding: 0 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-style: italic;
+        border-right: 1px solid #143606;
+        cursor: pointer;
+    }
+    .start-btn:hover {
+        filter: brightness(1.1);
+    }
+    .system-tray {
+        background: #0972da;
+        color: white;
+        padding: 0 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        border-left: 1px solid #1159a6;
+    }
+    /* Ajuste para que el footer no quede tapado por la barra */
+    footer { 
+        padding-bottom: 45px !important; 
+    }
+</style>
+
+<div class="taskbar">
+    <div class="start-btn">
+        <img src="https://win98icons.alexmeub.com/icons/png/msagent-0.png" width="16" style="margin-right: 5px;"> 
+        INICIO
+    </div>
+    
+    <div style="color: white; font-size: 0.7rem; margin-left: 10px; flex-grow: 1; text-shadow: 1px 1px #000;">
+        <span style="border: 1px solid rgba(255,255,255,0.3); padding: 2px 8px; background: rgba(255,255,255,0.1);">
+            WASOTATTOO_SITE_V2.exe
+        </span>
+    </div>
+
+    <div class="system-tray">
+        <img src="https://win98icons.alexmeub.com/icons/png/loudspeaker_rays-0.png" width="14" style="margin-right: 8px; filter: invert(1);">
+        <span id="reloj-taskbar">00:00</span>
+    </div>
+</div>
+
+<script>
+    function actualizarReloj() {
+        const ahora = new Date();
+        const h = ahora.getHours().toString().padStart(2, '0');
+        const m = ahora.getMinutes().toString().padStart(2, '0');
+        document.getElementById('reloj-taskbar').innerText = h + ":" + m;
+    }
+    setInterval(actualizarReloj, 1000);
+    actualizarReloj();
+</script>
+<style>
+    .radio-waso {
+        position: fixed;
+        bottom: 50px; /* Por encima de la barra de tareas */
+        right: 20px;
+        width: 260px;
+        background: #c0c0c0; /* Gris clásico Windows */
+        border: 2px solid;
+        border-color: #fff #808080 #808080 #fff;
+        padding: 5px;
+        font-family: 'Tahoma', sans-serif;
+        z-index: 9999;
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .radio-header {
+        background: linear-gradient(to right, #000080, #1084d0);
+        color: white;
+        padding: 3px 8px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .radio-display {
+        background: #000;
+        color: #39ff14; /* Verde matriz */
+        padding: 10px;
+        border: 2px inset #fff;
+        text-align: center;
+        font-family: 'VT323', monospace;
+        margin-bottom: 5px;
+        height: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .radio-controls {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2px;
+    }
+
+    .btn-radio {
+        background: #c0c0c0;
+        border: 2px solid;
+        border-color: #fff #808080 #808080 #fff;
+        font-size: 0.7rem;
+        cursor: pointer;
+        padding: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .btn-radio:active {
+        border-color: #808080 #fff #fff #808080;
+        padding: 6px 4px 4px 6px;
+    }
+
+    .radio-status {
+        font-size: 0.6rem;
+        color: #808080;
+        margin-top: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    /* Animación de texto de radio */
+    .track-name {
+        white-space: nowrap;
+        animation: marquee-radio 10s linear infinite;
+    }
+
+    @keyframes marquee-radio {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+</style>
+
+<div class="radio-waso">
+    <div class="radio-header">
+        <span>📻 WASO_RADIO.EXE</span>
+        <span>[X]</span>
+    </div>
+    
+    <div class="radio-display">
+        <div id="radio-info" class="track-name">RADIO OFFLINE - PRESIONÁ PLAY</div>
+        <div id="radio-time" style="font-size: 0.8rem; color: #00ff00;">00:00</div>
+    </div>
+
+    <div class="radio-controls">
+        <button class="btn-radio" onclick="playRadio()">PLAY</button>
+        <button class="btn-radio" onclick="pauseRadio()">PAUSE</button>
+        <button class="btn-radio" onclick="nextTrack()">NEXT</button>
+        <button class="btn-radio" onclick="stopRadio()">STOP</button>
+    </div>
+
+    <div class="radio-status">Sintonizando: 100.3 MHz - La Docta</div>
+</div>
+
+<audio id="wasoAudio" onended="nextTrack()"></audio>
+
+<script>
+    const audio = document.getElementById('wasoAudio');
+    const info = document.getElementById('radio-info');
+    const timeDisplay = document.getElementById('radio-time');
+
+    // --- CONFIGURACIÓN DE TUS CANCIONES ---
+    // Cambiá estos nombres por los archivos que tenés en tu carpeta
+    const playlist = [
+        { nombre: "La Mona Jimenez - El Federal", archivo: "musica/mona_federal.mp3" },
+        { nombre: "Rodrigo - Soy Cordobés", archivo: "musica/rodrigo_cordobes.mp3" },
+        { nombre: "Cuarteto Mix - Waso Tattoo", archivo: "musica/mix_waso.mp3" }
+    ];
+
+    let currentTrack = 0;
+
+    function loadTrack(index) {
+        audio.src = playlist[index].archivo;
+        info.innerText = "REPRODUCIENDO: " + playlist[index].nombre;
+    }
+
+    function playRadio() {
+        if (!audio.src) loadTrack(currentTrack);
+        audio.play().catch(e => {
+            info.innerText = "ERROR: ARCHIVO NO ENCONTRADO";
+        });
+    }
+
+    function pauseRadio() {
+        audio.pause();
+        info.innerText = "RADIO EN PAUSA";
+    }
+
+    function stopRadio() {
+        audio.pause();
+        audio.currentTime = 0;
+        info.innerText = "RADIO DETENIDA";
+    }
+
+    function nextTrack() {
+        currentTrack = (currentTrack + 1) % playlist.length;
+        loadTrack(currentTrack);
+        audio.play();
+    }
+
+    // Actualizar el tiempo del reproductor
+    audio.ontimeupdate = function() {
+        let mins = Math.floor(audio.currentTime / 60);
+        let secs = Math.floor(audio.currentTime % 60);
+        timeDisplay.innerText = mins.toString().padStart(2, '0') + ":" + secs.toString().padStart(2, '0');
+    };
+</script>
+</body>
+</html>
